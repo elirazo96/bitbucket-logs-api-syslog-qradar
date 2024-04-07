@@ -11,12 +11,12 @@ Once you complete the process, you will receive the logs. Here is a link to the 
 Connecting Bitbucket API Logs to syslog
 
 Add the following command to the crontab on the QRadar console/collector:
-Make sure you will use the same path
 
 ```bash
 # Bitbucket Logs
 */4 * * * * python3 /root/Bitbucket/bitbucket.py;bash /root/Bitbucket/sendLogs.sh
 ```
+Make sure you will use the same path
 
 Create a Log source with the following identifier: 10.10.10.12. 
 You can change it, but you will need to update it in the sendLogs.sh script as well.
