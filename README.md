@@ -14,10 +14,6 @@ Add the following command to the crontab on the QRadar console/collector:
 # Bitbucket Logs
 */4 * * * * python3 /root/Bitbucket/bitbucket.py; bash /root/Bitbucket/sendLogs.sh
 
-Create a Log source with the following identifier: 10.10.10.12. You can change it, but you will need to update it in the sendLogs.sh script as well.
-Note: This integration was developed and tested in my lab and is not supported by IBM DSM guide. Use it at your own risk.
-
-
 
 
 
