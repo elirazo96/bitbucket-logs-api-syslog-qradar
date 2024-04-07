@@ -1,4 +1,4 @@
-# Connecting Bitbucket Workspace to Atlassian Admin
+Connecting Bitbucket Workspace to Atlassian Admin
 
 To connect your Bitbucket Workspace to Atlassian Admin, follow these steps:
 
@@ -8,7 +8,7 @@ To connect your Bitbucket Workspace to Atlassian Admin, follow these steps:
 Once you complete the process, you will receive the logs. Here is a link to the logs you will receive at the end of the process:
 [Bitbucket Cloud Audit Log Events](https://confluence.atlassian.com/bbkb/bitbucket-cloud-audit-log-events-1178872155.html)
 
-# Connecting Bitbucket API Logs to syslog
+Connecting Bitbucket API Logs to syslog
 
 Add the following command to the crontab on the QRadar console/collector:
 
@@ -17,7 +17,7 @@ Add the following command to the crontab on the QRadar console/collector:
 */4 * * * * python3 /root/Bitbucket/bitbucket.py;bash /root/Bitbucket/sendLogs.sh
 ```
 
-# Create a Log source with the following identifier: 10.10.10.12. You can change it, but you will need to update it in the sendLogs.sh script as well.
+Create a Log source with the following identifier: 10.10.10.12. You can change it, but you will need to update it in the sendLogs.sh script as well.
 Note: This integration was developed and tested in my lab and is not supported by IBM DSM guide. Use it at your own risk.
 
 
